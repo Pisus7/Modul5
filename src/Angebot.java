@@ -1,6 +1,10 @@
 import java.time.LocalDate;
 
+
 public class Angebot {
-    private LocalDate localDate;
+    private LocalDate flugdatum;
+    private double regulaererPreis;
+    private String flugnummer;
+
 
 }
