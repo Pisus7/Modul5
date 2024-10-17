@@ -21,9 +21,16 @@ public class Angebot {
 
         if (flugdatum.getMonth()== Month.JANUARY || flugdatum.getMonth()== Month.APRIL || flugdatum.getMonth()== Month.OCTOBER) {
 
-
+            rabattstrategie = new MaxiDiscount();
+        } else if (flugdatum.getMonth()== Month.FEBRUARY || flugdatum.getMonth()== Month.MARCH) {
+            rabattstrategie = new MidiDiscount();
+        } else {
+            rabattstrategie = new ZeroDiscount();
         }
 
     }
+
+
+
 
 }
