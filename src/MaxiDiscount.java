@@ -1,2 +1,2 @@
-public class MaxiDiscount {
+public class MaxiDiscount extends Rabattstrategie{
 }
