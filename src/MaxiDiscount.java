@@ -6,6 +6,9 @@ public class MaxiDiscount extends Rabattstrategie{
 
     @Override
     public double getPreis(double preisOhneNachlass) {
-        return 0;
+
+
+
+        return preisOhneNachlass* 0.7;
     }
 }

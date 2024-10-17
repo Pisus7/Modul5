@@ -56,4 +56,14 @@ public class Angebot {
     public double getReduzierterPreis(double regulaererPreis) {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "Angebot{" +
+                "flugdatum=" + flugdatum +
+                ", regulaererPreis=" + regulaererPreis +
+                ", flugnummer='" + flugnummer + '\'' +
+                ", rabattstrategie=" + rabattstrategie +
+                '}';
+    }
 }

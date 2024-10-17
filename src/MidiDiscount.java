@@ -6,7 +6,7 @@ public class MidiDiscount extends Rabattstrategie{
 
     @Override
     public double getPreis(double preisOhneNachlass) {
-        return 0;
+        return preisOhneNachlass*0.85;
     }
 
 
