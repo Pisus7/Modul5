@@ -16,7 +16,7 @@ public class Angebot {
 
     }
 
-    public void rabattstrategieErkennen() {
+    public void rabattstrategieWaehlen() {
 
 
         if (flugdatum.getMonth()== Month.JANUARY || flugdatum.getMonth()== Month.APRIL || flugdatum.getMonth()== Month.OCTOBER) {
@@ -30,7 +30,30 @@ public class Angebot {
 
     }
 
+    public LocalDate getFlugdatum() {
+        return flugdatum;
+    }
 
+    public void setFlugdatum(LocalDate flugdatum) {
+        this.flugdatum = flugdatum;
+    }
 
+    public double getRegulaererPreis() {
+        return regulaererPreis;
+    }
 
+    public void setRegulaererPreis(double regulaererPreis) {
+        this.regulaererPreis = regulaererPreis;
+    }
+
+    public String getFlugnummer() {
+        return flugnummer;
+    }
+
+    public void setFlugnummer(String flugnummer) {
+        this.flugnummer = flugnummer;
+    }
+    public double getReduzierterPreis(double regulaererPreis) {
+        return 0;
+    }
 }
