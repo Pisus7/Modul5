@@ -1,7 +1,7 @@
 public class ZeroDiscount extends Rabattstrategie{
     @Override
     public double getReduzierterPreis(double regulaererPreis) {
-        return 0;
+        return regulaererPreis;
     }
 
     @Override

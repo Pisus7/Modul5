@@ -7,12 +7,15 @@ public class Angebot {
     private double regulaererPreis;
     private String flugnummer;
     private Rabattstrategie rabattstrategie;
+    private double reduzierterPreis;
 
     public Angebot(LocalDate flugdatum, double regulaererPreis, String flugnummer) {
         this.flugdatum = flugdatum;
+        rabattstrategieWaehlen();
+
         this.regulaererPreis = regulaererPreis;
         this.flugnummer = flugnummer;
-
+        this.reduzierterPreis= this.rabattstrategie.getReduzierterPreis(this.getRegulaererPreis());
 
     }
 
@@ -53,9 +56,16 @@ public class Angebot {
     public void setFlugnummer(String flugnummer) {
         this.flugnummer = flugnummer;
     }
-    public double getReduzierterPreis(double regulaererPreis) {
-        return 0;
+    public double getReduzierterPreis() {
+
+
+
+
+
+        return reduzierterPreis;
     }
+
+
 
     @Override
     public String toString() {
